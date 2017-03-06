@@ -6,7 +6,6 @@
 * ggplot2
 * dplyr
 
-===
 
 
 ## Coursera
