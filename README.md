@@ -1,5 +1,5 @@
-## Coursera
-### Data Science - John Hopkins University
+### Coursera
+#### Data Science - John Hopkins University
 
 ##### 2015
 * Data Scientist's Toolbox
@@ -15,9 +15,9 @@
 * Developing Data Products
 * Data Science Capstone
 
+---
 
-
-## DataCamp
+### DataCamp
 
 ##### 2016
 
@@ -36,6 +36,3 @@
 * Working with geospacial data in R
 * Correlation and regression
 * Financial trading in R
-
-
-
