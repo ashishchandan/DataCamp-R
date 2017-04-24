@@ -1,133 +1,158 @@
 
+#-----------------------------------------------------------------------------
+#- DataCamp: ggplot2 (p1)
+#-----------------------------------------------------------------------------
 
 #-----------------------------------------------------------------------------
-# libraries
+#- load libraries
 #-----------------------------------------------------------------------------
 
-library("ggplot2")
+library(ggplot2)
 
 rm(list = ls())
+cat("\014")
 
 
 #-----------------------------------------------------------------------------
-# chapter 1 - Introduction
+#- geom_point()
 #-----------------------------------------------------------------------------
 
-#install.packages("MASS")
+ggplot(mtcars, aes(x = cyl, y = mpg)) + geom_point()
 
-library("MASS")
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_point()
 
-data <- MASS::mammals
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 
+ggplot(mtcars, aes(x = wt, y = mpg, col = disp)) + geom_point()
 
-ggplot(data = data, aes(x = body, y = brain)) + geom_point(alpha = 0.6) +
-    coord_fixed() +
-    scale_x_log10() +
-    scale_y_log10() +
-    stat_smooth(method = "lm", col = "#C42126", se = F)
+ggplot(mtcars, aes(x = wt, y = mpg, size = disp)) + geom_point()
 
 
-ggplot(mtcars, aes(x = wt, y = mpg, size = disp, col = disp)) + geom_point()
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
+
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
+
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point() + geom_point(aes(col = clarity))
+
+ggplot(diamonds, aes(x = carat, y = price, col = clarity)) + geom_smooth()
+
+ggplot(diamonds, aes(x = carat, y = price, col = clarity)) + geom_point(alpha = 0.4)
 
 
-levels(iris$Species) <- c("Setosa", "Versicolor", "Virginica") #correct labels
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point() + geom_point(aes(col = clarity))
+
+
+ggplot(diamonds, aes(x = carat, y = price)) + 
+  geom_point(alpha = 0.2) + 
+  geom_smooth(se = FALSE) + 
+  geom_smooth(aes(col = clarity), se = FALSE)
+
 
 ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) + 
-    geom_jitter(alpha = 0.6) +
-    facet_grid(. ~ Species) +
-    stat_smooth(method = "lm", se = F, col = "red") +
-    scale_y_continuous("Sepal Width (cm)", limits = c(2,5), expand = c(0,0)) +
-    scale_x_continuous("Sepal Length (cm)", limits = c(4,8), expand = c(0,0)) +
-    coord_equal() #equal x and y
+  geom_jitter(alpha = 0.6) +
+  facet_grid(. ~ Species) +
+  stat_smooth(method = "lm", se = F, col = "red") +
+  scale_y_continuous("Sepal Width (cm)", limits = c(2,5), expand = c(0,0)) +
+  scale_x_continuous("Sepal Length (cm)", limits = c(4,8), expand = c(0,0)) +
+  coord_equal()
 
 
-
-dia_plot <- ggplot(diamonds, aes(x = carat, y = price))
-
-dia_plot + geom_point(aes(col = clarity)) #aes() can be called within geom_points()
-
-
-ggplot(diamonds, aes(x = carat, y = price)) +
-    geom_point(alpha = 0.2) +
-    geom_smooth(method = "lm", se = F, aes(col = clarity)) #aes() called within geom_smooth, model for each type clarity
+ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(aes(group = 1), method = "lm", se = FALSE, linetype = 2)
 
 
+ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) +
+  geom_point(shape = 1, size = 4)
 
+ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) +
+  geom_point(shape = 16, size = 6, alpha = 0.6)
 
-#-----------------------------------------------------------------------------
-# chapter 2 - Data
-#-----------------------------------------------------------------------------
+ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) +
+  geom_point(size = 10, shape = 23)
 
-library(tidyr) #gather and spread function
-library(dplyr)
-
-iris.wide <- iris %>% ?
-
-iris.tidy <- iris %>%
-    gather(key, Value, -Species) %>% #- in front of categorical var
-    separate(key, c("Part", "Measure"), "\\.") #seperate eg Sepal.Width into two vars
-
-str(iris)
-str(iris.tidy)
-
-ggplot(iris.tidy, aes(x = Species, y = Value, col = Part)) +
-    geom_jitter() +
-    facet_grid(. ~ Measure)
-
-ggplot(iris.wide, aes(x = Length, y = Width, col = Part)) +
-    geom_jitter() +
-    facet_grid(. ~ Species)
-
-
-
-iris$Flower <- 1:nrow(iris)
-
-iris.wide <- iris %>%
-    gather(key, value, -Species, -Flower) %>%
-    separate(key, c("Part", "Measure"), "\\.") %>%
-    spread(Measure, value)
+ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) +
+  geom_point(size = 4, shape = 1)
 
 
 #-----------------------------------------------------------------------------
-# chapter 3 - Aesthetics
+#- geom_bar()
 #-----------------------------------------------------------------------------
 
-mtcars$cyl <- as.factor(mtcars$cyl)
+# fill absolute
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(am))) + geom_bar()
 
-ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) + geom_point(shape = 13, size = 5)
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_point()
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_point(shape = 16, size = 6, alpha = 0.6)
-ggplot(mtcars, aes(x = wt, y = mpg, size = cyl)) + geom_point()
-ggplot(mtcars, aes(x = wt, y = mpg, alpha = cyl)) + geom_point()
-ggplot(mtcars, aes(x = wt, y = mpg, shape = cyl)) + geom_point()
-ggplot(mtcars, aes(x = wt, y = mpg, label = cyl)) + geom_text()
+# fill proportional
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(am))) + geom_bar(position = "fill")  
 
-
-ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) + geom_point()
-ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) + geom_point(col = "#123456")
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_point(size = 10, shape = 23, col = "#123456")
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_point(alpha = 0.5)
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_point(shape = 24, col = 'yellow')
-ggplot(mtcars, aes(x = wt, y = mpg, fill = cyl)) + geom_text(label = "X", color = 'red', size = 10)
+# dodge
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(am))) +
+  geom_bar(position = "dodge") +
+  scale_x_discrete("Cylinders") + 
+  scale_y_continuous("Number") +
+  scale_fill_manual("Transmission", 
+                    values = c("#E41A1C", "#377EB8"),
+                    labels = c("Manual", "Automatic")) 
 
 
-ggplot(mtcars, aes(x = mpg, y = qsec, col = factor(cyl))) + geom_point()
-ggplot(mtcars, aes(x = mpg, y = qsec, col = factor(cyl), shape = factor(am))) + geom_point()
-ggplot(mtcars, aes(x = mpg, y = qsec, col = factor(cyl), shape = factor(am), size = hp/wt)) + geom_point()
-ggplot(mtcars, aes(x = mpg, y = qsec, col = factor(cyl), shape = factor(am), size = hp/wt)) + geom_text(aes(label = rownames(mtcars)))
+# jittering - mitigate overplotting
+ggplot(diamonds, aes(x = clarity, y = carat, col = price)) +
+  geom_point(size = 1, position = "jitter", alpha = 0.5, shape = 1)
 
 
+# univariate histogram
+ggplot(mtcars, aes(mpg)) + geom_histogram(binwidth = 1)
 
+# univariate histogram, density
+ggplot(mtcars, aes(mpg)) + geom_histogram(aes(y=..density..), binwidth = 1)
+
+
+ggplot(mtcars, aes(as.factor(cyl), fill = as.factor(am))) +
+  geom_bar(position = "stack")
+
+ggplot(mtcars, aes(as.factor(cyl), fill = as.factor(am))) +
+  geom_bar(position = "fill") 
+
+ggplot(mtcars, aes(as.factor(cyl), fill = as.factor(am))) +
+  geom_bar(position = "dodge")
+
+ggplot(mtcars, aes(as.factor(cyl), fill = as.factor(am))) + 
+  geom_bar(position = position_dodge(0.4), alpha = 0.6)
+
+ggplot(mtcars, aes(mpg, col = cyl)) + geom_freqpoly(binwidth = 1)
+
+
+ggplot(mtcars, aes(mpg, fill = as.factor(cyl))) +
+  geom_histogram(binwidth = 1, position = "dodge")
+
+ggplot(mtcars, aes(mpg, fill = as.factor(cyl))) +
+  geom_histogram(binwidth = 1, position = "identity", alpha = 0.4)
 
 
 #-----------------------------------------------------------------------------
-# chapter 4 - Geometries
+#- geom_line()
 #-----------------------------------------------------------------------------
 
+ggplot(mtcars, aes(x = mpg, y = disp)) +
+  geom_line()
+
+# plot rectangles
+ggplot(mtcars, aes(x = mpg, y = disp)) +
+  geom_line() +
+  geom_rect(aes(xmin = 15, xmax = 20, ymin = -Inf, ymax = +Inf), 
+            inherit.aes = FALSE, fill = "red", alpha = 0.01)
+
+# plot smooth trends on top off
+ggplot(mtcars, aes(x = mpg, y = disp, col = cyl)) +
+  geom_line(alpha = 0.3) +
+  geom_smooth(lwd = 2, se = FALSE)
+
 
 #-----------------------------------------------------------------------------
-# chapter 5 - qplot and wrap-up
+#- geom_dotplot()
 #-----------------------------------------------------------------------------
 
-
+ggplot(mtcars, aes(cyl, wt, fill = factor(am))) +
+  geom_dotplot(stackdir = "center", binaxis = "y")
 
