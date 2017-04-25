@@ -1,7 +1,7 @@
 # MOOC
 Notes from Massive Open Online Courses
 
-First Header | Second Header
+Col1 | Col2
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+cell 1 | cell 2
+cell 3 | cell 4
