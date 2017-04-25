@@ -1,8 +1,11 @@
 # MOOC
 Notes from Massive Open Online Courses
 
-Course | Finished date
------------- | -------------
+
+## DataCamp
+
+Topic |Course | Finished date
+------------ | ------------- | -------------
 Applied Finance | Bond Valuation and Analysis in R | 
 Applied Finance | Credit Risk Modeling in R | 
 Applied Finance | Financial Trading in R | 
@@ -16,12 +19,12 @@ Data Manipulation | Data Analysis in R, the data.table Way |
 Data Manipulation | Data Manipulation in R with dplyr | 
 Data Manipulation | Exploratory Data Analysis in R: Case Study | 
 Data Manipulation | Exploring Pitch Data with R | 
-Data Manipulation | Joining Data in R with dplyr | 
+Data Manipulation | Joining Data in R with dplyr | 12/2016
 Data Manipulation | Manipulating Time Series Data in R with xts & zoo | 
 Data Manipulation | Manipulating Time Series Data in R: Case Studies | 
 Data Visualization | Data Visualization in R | 
 Data Visualization | Data Visualization in R with ggvis | 
-Data Visualization | Data Visualization with ggplot2 (Part 1) | 
+Data Visualization | Data Visualization with ggplot2 (Part 1) | 2/2017
 Data Visualization | Data Visualization with ggplot2 (Part 2) | 
 Data Visualization | Data Visualization with ggplot2 (Part 3) | 
 Data Visualization | Working with Geospatial Data in R | 
