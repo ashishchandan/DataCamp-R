@@ -5,6 +5,7 @@ Notes from Massive Open Online Courses
 
 ---
 #### Coursera: Data Science, John Hopkins University
+[coursera.org](https://www.coursera.org/specializations/jhu-data-science)
 
 Course | Finished
 ------------ | -------------
@@ -22,6 +23,7 @@ Data Science Capstone |
 
 
 #### DataCamp: R
+[datacamp.com](https://www.datacamp.com/courses/tech:r)
 
 Topic |Course | Finished
 ------------ | ------------- | -------------
