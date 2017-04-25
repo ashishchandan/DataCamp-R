@@ -35,7 +35,7 @@ Applied Finance | Introduction to Portfolio Analysis in R |
 Applied Finance | Introduction to R for Finance | 
 Case Studies | Text Mining: Bag of Words | 
 Data Manipulation | Data Analysis in R, the data.table Way | 
-Data Manipulation | Data Manipulation in R with dplyr | 
+Data Manipulation | Data Manipulation in R with **dplyr** | 
 Data Manipulation | Exploratory Data Analysis in R: Case Study | 
 Data Manipulation | Exploring Pitch Data with R | 
 Data Manipulation | Joining Data in R with dplyr | 12/2016
