@@ -1,10 +1,10 @@
 
-#### MOOC
+#### Notes from Massive Open Online Courses
 
-###### Notes from Massive Open Online Courses
+___
 
 #### Coursera: Data Science, John Hopkins University
-[coursera.org](https://www.coursera.org/specializations/jhu-data-science)
+[www](https://www.coursera.org/specializations/jhu-data-science)
 
 Course | Finished
 ------------ | -------------
@@ -19,10 +19,10 @@ Practical Machine Learning | :octocat:
 Developing Data Products | 
 Data Science Capstone | 
 
-
+___
 
 #### DataCamp: R
-[datacamp.com](https://www.datacamp.com/courses/tech:r)
+[www](https://www.datacamp.com/courses/tech:r)
 
 Topic |Course | Finished
 ------------ | ------------- | -------------
