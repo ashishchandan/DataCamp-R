@@ -11,11 +11,11 @@ Course | Finished
 Data Scientist's Toolbox | :octocat:
 R Programming | :octocat:
 Getting and Cleaning Data | :octocat:
-Exploratory Data Analysis | V
+Exploratory Data Analysis | :octocat:
 Reproducible Research | 
 Statistical Inference | 
 Regression Models | 
-Practical Machine Learning | V
+Practical Machine Learning | :octocat:
 Developing Data Products | 
 Data Science Capstone | 
 
@@ -36,10 +36,10 @@ Applied Finance | Introduction to Portfolio Analysis in R |
 Applied Finance | Introduction to R for Finance | 
 Case Studies | Text Mining: Bag of Words | 
 Data Manipulation | Data Analysis in R, the data.table Way | 
-Data Manipulation | Data Manipulation in R with dplyr | V
+Data Manipulation | Data Manipulation in R with dplyr | :octocat:
 Data Manipulation | Exploratory Data Analysis in R: Case Study | 
 Data Manipulation | Exploring Pitch Data with R | 
-Data Manipulation | Joining Data in R with dplyr | V
+Data Manipulation | Joining Data in R with dplyr | :octocat:
 Data Manipulation | Manipulating Time Series Data in R with xts & zoo | 
 Data Manipulation | Manipulating Time Series Data in R: Case Studies | 
 Data Visualization | Data Visualization in R | 
@@ -48,7 +48,7 @@ Data Visualization | Data Visualization with ggplot2 (Part 1) | :octocat:
 Data Visualization | Data Visualization with ggplot2 (Part 2) | 
 Data Visualization | Data Visualization with ggplot2 (Part 3) | 
 Data Visualization | Working with Geospatial Data in R | 
-Importing & Cleaning | Cleaning Data in R | V
+Importing & Cleaning | Cleaning Data in R | :octocat:
 Importing & Cleaning | Importing & Cleaning Data in R: Case Studies | 
 Importing & Cleaning | Importing Data in R (Part 1) | 
 Importing & Cleaning | Importing Data in R (Part 2) | 
