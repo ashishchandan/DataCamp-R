@@ -2,6 +2,24 @@
 Notes from Massive Open Online Courses
 
 
+## Coursera: Data Science - John Hopkins University
+
+Course | Finished date
+------------ | -------------
+Data Scientist's Toolbox | 
+R Programming | 
+Getting and Cleaning Data | 
+Exploratory Data Analysis | 
+Reproducible Research | 
+Statistical Inference | 
+Regression Models | 
+Practical Machine Learning | 
+Developing Data Products | 
+Data Science Capstone | 
+
+
+
+
 ## DataCamp
 
 Topic |Course | Finished date
