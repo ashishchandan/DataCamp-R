@@ -4,7 +4,7 @@
 Notes from Massive Open Online Courses
 
 ---
-### Coursera: Data Science - John Hopkins University
+#### Coursera: Data Science, John Hopkins University
 
 Course | Finished
 ------------ | -------------
@@ -21,9 +21,9 @@ Data Science Capstone |
 
 
 
-### DataCamp
+#### DataCamp: R
 
-Topic |Course | Finished date
+Topic |Course | Finished
 ------------ | ------------- | -------------
 Applied Finance | Bond Valuation and Analysis in R | 
 Applied Finance | Credit Risk Modeling in R | 
@@ -35,19 +35,19 @@ Applied Finance | Introduction to Portfolio Analysis in R |
 Applied Finance | Introduction to R for Finance | 
 Case Studies | Text Mining: Bag of Words | 
 Data Manipulation | Data Analysis in R, the data.table Way | 
-Data Manipulation | Data Manipulation in R with **dplyr** | 
+Data Manipulation | Data Manipulation in R with dplyr | V
 Data Manipulation | Exploratory Data Analysis in R: Case Study | 
 Data Manipulation | Exploring Pitch Data with R | 
-Data Manipulation | Joining Data in R with dplyr | 12/2016
+Data Manipulation | Joining Data in R with dplyr | V
 Data Manipulation | Manipulating Time Series Data in R with xts & zoo | 
 Data Manipulation | Manipulating Time Series Data in R: Case Studies | 
 Data Visualization | Data Visualization in R | 
 Data Visualization | Data Visualization in R with ggvis | 
-Data Visualization | Data Visualization with ggplot2 (Part 1) | 2/2017
+Data Visualization | Data Visualization with ggplot2 (Part 1) | V
 Data Visualization | Data Visualization with ggplot2 (Part 2) | 
 Data Visualization | Data Visualization with ggplot2 (Part 3) | 
 Data Visualization | Working with Geospatial Data in R | 
-Importing & Cleaning | Cleaning Data in R | 
+Importing & Cleaning | Cleaning Data in R | V
 Importing & Cleaning | Importing & Cleaning Data in R: Case Studies | 
 Importing & Cleaning | Importing Data in R (Part 1) | 
 Importing & Cleaning | Importing Data in R (Part 2) | 
