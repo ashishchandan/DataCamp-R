@@ -1,17 +1,16 @@
 
+#### MOOC
 
-# MOOC
-Notes from Massive Open Online Courses
+###### Notes from Massive Open Online Courses
 
----
 #### Coursera: Data Science, John Hopkins University
 [coursera.org](https://www.coursera.org/specializations/jhu-data-science)
 
 Course | Finished
 ------------ | -------------
-Data Scientist's Toolbox | V
-R Programming | V
-Getting and Cleaning Data | V
+Data Scientist's Toolbox | :octocat:
+R Programming | :octocat:
+Getting and Cleaning Data | :octocat:
 Exploratory Data Analysis | V
 Reproducible Research | 
 Statistical Inference | 
@@ -45,7 +44,7 @@ Data Manipulation | Manipulating Time Series Data in R with xts & zoo |
 Data Manipulation | Manipulating Time Series Data in R: Case Studies | 
 Data Visualization | Data Visualization in R | 
 Data Visualization | Data Visualization in R with ggvis | 
-Data Visualization | Data Visualization with ggplot2 (Part 1) | V
+Data Visualization | Data Visualization with ggplot2 (Part 1) | :octocat:
 Data Visualization | Data Visualization with ggplot2 (Part 2) | 
 Data Visualization | Data Visualization with ggplot2 (Part 3) | 
 Data Visualization | Working with Geospatial Data in R | 
