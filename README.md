@@ -5,8 +5,9 @@ ___
 
 #### Coursera: Data Science, John Hopkins University
 [www](https://www.coursera.org/specializations/jhu-data-science)
+
 [notes](http://sux13.github.io/DataScienceSpCourseNotes/)
-<a href="http://example.com/" target="_blank">example</a>
+
 
 Course | Finished
 ------------ | -------------
