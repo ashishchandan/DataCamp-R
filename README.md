@@ -1,30 +1,5 @@
+#### DataCampR
 
-#### Notes from Massive Open Online Courses
-
-___
-
-#### Coursera: Data Science, John Hopkins University
-[www](https://www.coursera.org/specializations/jhu-data-science)
-
-[notes](http://sux13.github.io/DataScienceSpCourseNotes/)
-
-
-Course | Finished
------------- | -------------
-Data Scientist's Toolbox | :octocat:
-R Programming | :octocat:
-Getting and Cleaning Data | :octocat:
-Exploratory Data Analysis | :octocat:
-Reproducible Research | 
-Statistical Inference | 
-Regression Models | 
-Practical Machine Learning | :octocat:
-Developing Data Products | 
-Data Science Capstone | 
-
-___
-
-#### DataCamp: R
 [www](https://www.datacamp.com/courses/tech:r)
 
 Topic |Course | Finished
