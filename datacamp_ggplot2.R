@@ -76,6 +76,13 @@ ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) +
   geom_point(size = 4, shape = 1)
 
 
+# extra
+ggplot(mtcars, aes(mpg, disp, color = disp)) + 
+  geom_point(shape = 16, size = 6, alpha = 0.5, show.legend = FALSE) + 
+  theme_minimal() +
+  scale_color_gradient(low = "#0091ff", high = "#f0650e")
+
+
 #-----------------------------------------------------------------------------
 #- geom_bar()
 #-----------------------------------------------------------------------------
